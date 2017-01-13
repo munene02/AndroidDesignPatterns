@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name=".MainActivity"
+            android:name=".FirstActivity"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,9 +23,12 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".SecondActivity"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/AppTheme" />
         <activity
             android:name=".ThirdActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".FourthActivity"
             android:theme="@style/AppTheme.NoActionBar" />
     </application>
 

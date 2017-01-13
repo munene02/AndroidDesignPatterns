@@ -42,7 +42,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
 
     private void setUpNavView() {
         navigationView.setNavigationItemSelectedListener(this);
-        if (useDrawerToggle()) { // use the hamburger main_menu
+        if (useDrawer()) { // use the hamburger main_menu
             ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, fullLayout, toolbar,
                     R.string.navigation_drawer_open,
                     R.string.navigation_drawer_close);
@@ -53,7 +53,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
             // Use home/back button instead
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         } else if (!useToolbar() && getSupportActionBar() != null) {
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+            getSupportActionBar().setDisplayHomeAsUpEnabled(false);
         }
     }
 
@@ -61,7 +61,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         return true;
     }
 
-    protected boolean useDrawerToggle() {
+    protected boolean useDrawer() {
         return true;
     }
 
