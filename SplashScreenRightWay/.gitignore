@@ -1,11 +1,13 @@
 #This is a gitignore file
 #Created by "rohitss"
+# Remove tracked files [git rm -r --cached .]
 /.gradle
 /.idea/
 /app/build/
 /app/src/androidTest
 /app/src/test
 /app/*.iml
+/app/*.log
 /build
 /*.iml
 /import-summary.txt
