@@ -44,8 +44,7 @@ public class BaseActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
         if (useDrawer()) { // use the hamburger main_menu
             ActionBarDrawerToggle drawerToggle = new ActionBarDrawerToggle(this, fullLayout, toolbar,
-                    R.string.navigation_drawer_open,
-                    R.string.navigation_drawer_close);
+                    R.string.navigation_drawer_open, R.string.navigation_drawer_close);
             fullLayout.addDrawerListener(drawerToggle);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             drawerToggle.syncState();
